@@ -2,3 +2,7 @@
 language: go
 go: 1.7
 sudo: false
+
+# Run.
+install: make install
+script: make test
