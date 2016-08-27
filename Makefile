@@ -15,7 +15,7 @@ lint:
 	gofmt -l .
 
 install:
-	echo TODO
+	go get -u github.com/Masterminds/glide
 
 test:
 	go test $(ALL_PKGS)
