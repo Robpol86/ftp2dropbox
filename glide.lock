@@ -1,10 +1,6 @@
-hash: fa7012bcd0c5575881e9f23821042a3ddae3d223e37989187dbfd6de52aaf11a
-updated: 2016-08-27T14:37:23.584061122-07:00
-imports:
-- name: github.com/golang/lint
-  version: c7bacac2b21ca01afa1dee0acf64df3ce047c28f
-  subpackages:
-  - golint
+hash: 94fe0541d00e6d4a8711679b8504f6e3289d6256af0690d1ace328e9914c0244
+updated: 2016-08-27T16:01:35.662839919-07:00
+imports: []
 testImports:
 - name: github.com/davecgh/go-spew
   version: 2df174808ee097f90d259e432cc04442cf60be21

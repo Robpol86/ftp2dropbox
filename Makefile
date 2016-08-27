@@ -2,7 +2,11 @@
 ALL_PKGS = $(shell glide nv)
 
 
-all: lint build
+all: clean lint build
+
+
+clean:
+	rm -f main
 
 
 $(GOPATH)/bin/golint:
@@ -13,11 +17,7 @@ $(GOPATH)/bin/glide:
 	go get -u github.com/Masterminds/glide
 
 
-vendor: $(GOPATH)/bin/glide
-	glide install
-
-
-install: $(GOPATH)/bin/glide
+vendor install: $(GOPATH)/bin/glide
 	glide up
 
 
@@ -39,7 +39,7 @@ lint: $(GOPATH)/bin/golint
 	gofmt -l $(ALL_PKGS)
 
 
-test:
+test: vendor
 	go test $(ALL_PKGS)
 
 
