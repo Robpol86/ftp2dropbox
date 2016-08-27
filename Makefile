@@ -2,7 +2,7 @@
 ALL_PKGS = $(shell glide nv)
 
 
-all: fmt test build
+all: lint build
 
 
 $(GOPATH)/bin/golint:
@@ -32,7 +32,7 @@ fmt:
 
 lint: $(GOPATH)/bin/golint
 	@echo "Running golint"
-	golint ./...
+	golint $(ALL_PKGS)
 	@echo "Running go vet"
 	go vet $(ALL_PKGS)
 	@echo "Checking gofmt"
@@ -41,3 +41,6 @@ lint: $(GOPATH)/bin/golint
 
 test:
 	go test $(ALL_PKGS)
+
+
+build: test main
