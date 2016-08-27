@@ -14,8 +14,11 @@ lint:
 	@echo "Checking gofmt"
 	gofmt -l .
 
-install:
+$(GOPATH)/bin/glide:
 	go get -u github.com/Masterminds/glide
+
+install: $(GOPATH)/bin/glide
+	glide up
 
 test:
 	go test $(ALL_PKGS)
