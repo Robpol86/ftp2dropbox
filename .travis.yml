@@ -1,0 +1,4 @@
+# Configure.
+language: go
+go: 1.7
+sudo: false
