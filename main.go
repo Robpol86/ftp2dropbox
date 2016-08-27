@@ -1,4 +1,4 @@
-package main
+package ftp2dropbox
 
 import "fmt"
 

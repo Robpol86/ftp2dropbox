@@ -24,5 +24,6 @@ _testmain.go
 *.prof
 
 # Robpol86
+vendor/
 *.rpm
 .idea/
