@@ -36,7 +36,7 @@ lint: $(GOPATH)/bin/golint
 	@echo "Running go vet"
 	go vet $(ALL_PKGS)
 	@echo "Checking gofmt"
-	gofmt -l .
+	gofmt -l $(ALL_PKGS)
 
 
 test:
