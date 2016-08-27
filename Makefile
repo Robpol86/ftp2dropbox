@@ -5,12 +5,16 @@ ALL_PKGS = $(shell glide nv)
 all: fmt test build
 
 
+$(GOPATH)/bin/golint:
+	go get -u github.com/golang/lint/golint
+
+
 $(GOPATH)/bin/glide:
 	go get -u github.com/Masterminds/glide
 
 
 vendor: $(GOPATH)/bin/glide
-    glide install
+	glide install
 
 
 install: $(GOPATH)/bin/glide
@@ -26,7 +30,7 @@ fmt:
 	go fmt $(ALL_PKGS)
 
 
-lint:
+lint: $(GOPATH)/bin/golint
 	@echo "Running golint"
 	golint ./...
 	@echo "Running go vet"
