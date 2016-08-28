@@ -1,6 +1,8 @@
-hash: 10dec0daa744d1ccd4f02951e0bb75002c377c93c9a74ef83534f606be8f5f44
-updated: 2016-08-27T23:03:56.064013732-05:00
-imports: []
+hash: 8bb5b4271b3aab3fc9f67c4c33240d5f1f1a4fba2eac944445510fde9971bb78
+updated: 2016-08-27T23:21:10.880848345-05:00
+imports:
+- name: github.com/andrewarrow/paradise_ftp
+  version: ff56aea38108eeb8f7886b11fa2cf4c635ba0db7
 testImports:
 - name: github.com/davecgh/go-spew
   version: 2df174808ee097f90d259e432cc04442cf60be21
