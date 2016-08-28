@@ -1,7 +1,6 @@
 package: github.com/Robpol86/ftp2dropbox
 import:
-- package: github.com/andrewarrow/paradise_ftp
-  version: ~0.1.0
+- package: github.com/goftp/server
 testImport:
 - package: github.com/stretchr/testify
   version: ~1.1.3
