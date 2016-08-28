@@ -10,10 +10,6 @@ clean:
 	rm -f main
 
 
-$(GOPATH)/bin/golint:
-	go get -u github.com/golang/lint/golint
-
-
 $(GOPATH)/bin/glide:
 	go get -u github.com/Masterminds/glide
 
@@ -31,7 +27,7 @@ fmt:
 	go fmt $(ALL_FILES)
 
 
-lint: $(GOPATH)/bin/golint
+lint: vendor
 	@echo "Running golint"
 	golint $(ALL_PKGS)
 	@echo "Running go vet"

@@ -1,5 +1,5 @@
-hash: c49819bea408344e28185d75ada075dc2674dde83ac948d412bbf669873b5274
-updated: 2016-08-27T17:07:31.273908624-07:00
+hash: b83a28cdc8ccd7c94662fd368cea4dac41ff6961fd6bd2c43eb34f7b9dbc3e0f
+updated: 2016-08-27T17:11:08.177998862-07:00
 imports:
 - name: github.com/urfave/cli
   version: 1efa31f08b9333f1bd4882d61f9d668a70cd902e
@@ -8,6 +8,10 @@ testImports:
   version: 2df174808ee097f90d259e432cc04442cf60be21
   subpackages:
   - spew
+- name: github.com/golang/lint
+  version: c7bacac2b21ca01afa1dee0acf64df3ce047c28f
+  subpackages:
+  - golint
 - name: github.com/pmezard/go-difflib
   version: d8ed2627bdf02c080bf22230dbb337003b7aba2d
   subpackages:
